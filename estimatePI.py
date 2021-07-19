@@ -10,11 +10,12 @@ def isInCirc(r):
     inCirc = 0
 
     for j in range(10000000):
-        #random x and random y between -2 and 2
+        #random x and random y between negative radius and positive radius 
         xCord = random.uniform(-r,r)
         yCord = random.uniform(-r,r)
-        #the chance of you hitting a circle of radius 1 inside of a total square of side lengths 2x2 is pi/4
-        # we can use this to calculate pi.
+        # the chance of you hitting a circle of radius 1 inside of ...
+        # ... a total square of side lengths 2x2 is pi/4 ...
+        # ... we can use this to calculate pi.
         total += 1
         
         if(distGiveCord(xCord, yCord) <= r):
